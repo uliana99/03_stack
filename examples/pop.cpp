@@ -16,8 +16,7 @@ void StackPOP(size_t _size) {
 		cout << "PUSHED " << _size << " VALUES" << endl;
 		cout << "POPED " << (_size/2) << " VALUES" << endl;
 		
-	} catch(const exception& e) {
-		cout << e.what() << endl;
+
 	}
 }
 
