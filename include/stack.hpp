@@ -36,7 +36,6 @@ public:
 	
 
     T pop() {
-		if(count_ == 0) throw runtime_error("Warning: stack's empty...");
 		return array_[--count_];
 	}
 
