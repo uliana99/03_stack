@@ -20,7 +20,7 @@ void StackPOP(size_t _size) {
 int main() {
 	try {
 		StackPOP(16);
-	} catch(const exception& e) {
-		if(e == 1) cout << e.what() << endl;
+	} catch(exception &e) {
+		cout << e.what() << endl;
 	}
 }
