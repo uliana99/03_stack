@@ -3,10 +3,10 @@
 #define WORKSPACE_HOMEWORK_HOMEWORK_02_STACK_STACK_U_INCLUDE_STACK_HPP_
 
 #include <iostream>
+#include <stdexcept>
 using std::cout;
 using std::endl;
-using std::runtime_error;
-using std::exception;
+
 
 template <typename T>
 class Stack {
@@ -41,9 +41,8 @@ class Stack {
             array_[count_++] = item;
         }
 
-
         T pop() {
-            if(count_ == 0) throw runtime_error(1);
+            if(count_ == 0) throw std::logic_error("Error");
             return array_[--count_];
         }
 
