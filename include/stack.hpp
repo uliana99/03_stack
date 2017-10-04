@@ -6,6 +6,7 @@
 using std::cout;
 using std::endl;
 using std::runtime_error;
+using std::exception;
 
 template <typename T>
 class Stack {
