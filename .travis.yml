@@ -1,5 +1,8 @@
 language: cpp
 
+notifications:
+  email: false
+  
 script:
 - cmake -H. -B_builds -DBUILD_EXAMPLES=ON
 - cmake --build _builds
