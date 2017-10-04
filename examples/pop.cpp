@@ -21,6 +21,6 @@ int main() {
 	try {
 		StackPOP(16);
 	} catch(const exception& e) {
-		cout << e.what() << endl;
+		if(e == 1) cout << e.what() << endl;
 	}
 }

@@ -42,7 +42,7 @@ class Stack {
 
 
         T pop() {
-            if(count_ == 0) throw runtime_error("Error");
+            if(count_ == 0) throw runtime_error(1);
             return array_[--count_];
         }
 
