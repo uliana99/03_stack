@@ -3,6 +3,7 @@
 #define WORKSPACE_HOMEWORK_HOMEWORK_02_STACK_STACK_U_INCLUDE_STACK_HPP_
 
 #include <iostream>
+#include <exception>
 using std::cout;
 using std::endl;
 
@@ -13,7 +14,7 @@ class Stack {
         size_t count_ = 0;
 
  public:
-        Stack() : array_size_(100), array_(new T[100]) {}
+        Stack() : Stack(100) {}
 
         explicit Stack(size_t _size):array_size_(_size), array_(new T[_size]) {}
 
@@ -41,6 +42,7 @@ class Stack {
 
 
         T pop() {
+            if(count_ == 0) throw runtime_error("Error");
             return array_[--count_];
         }
 

@@ -18,5 +18,9 @@ void StackPOP(size_t _size) {
 }
 
 int main() {
-	StackPOP(16);
+	try {
+		StackPOP(16);
+	} catch(const exception& e) {
+		cout << e.what() << endl;
+	}
 }
