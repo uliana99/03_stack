@@ -3,9 +3,9 @@
 #define WORKSPACE_HOMEWORK_HOMEWORK_02_STACK_STACK_U_INCLUDE_STACK_HPP_
 
 #include <iostream>
-#include <exception>
 using std::cout;
 using std::endl;
+using std::runtime_error;
 
 template <typename T>
 class Stack {
