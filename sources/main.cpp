@@ -7,10 +7,14 @@ void StackPOP(size_t _size);
 void StackEMPTY(size_t _size);
 
 int main() {
-	StackINIT();
-	StackPUSH(10);
-	StackPOP(14);
-	StackEMPTY(12);
+	try {
+		StackINIT();
+		StackPUSH(10);
+		StackPOP(14);
+		StackEMPTY(12);
+	} catch(std::exception &e) {
+		cout << e.what() << endl;
+	}
 	
 	return 0;
 }

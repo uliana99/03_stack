@@ -7,7 +7,8 @@ void StackPOP(size_t _size) {
 		}
 			
 		for(int j=0; j<(_size/2); j++) {
-			cout << A.pop() << " ";
+			A.pop();
+			cout << A.top() << " ";
 		}
 		cout << endl;
 

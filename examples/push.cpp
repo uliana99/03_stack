@@ -10,5 +10,9 @@ void StackPUSH(size_t _size) {
 }
 
 int main() {
-	StackPUSH(10);
+	try {
+		StackPUSH(10);
+	} catch(std::exception &e) {
+		cout << e.what() << endl;
+	}
 }

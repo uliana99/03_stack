@@ -1,13 +1,15 @@
 #include "stack.hpp"
 
-int l = 0;
-
 void StackINIT() {
 	Stack<int> A;
-	cout << "CREATED " << ++l << " STACK" << endl;
+	Stack<char> B(Stack<char>(20));
+	cout << "CREATED STACK A (INT)" << endl << "MOVED STACK B (CHAR)" << endl;
 }
 
 int main() {
-	StackINIT();
-	StackINIT();
+	try {
+		StackINIT();
+	} catch(std::exception &e) {
+		cout << e.what() << endl;
+	}
 }
